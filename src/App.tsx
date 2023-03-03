@@ -1,8 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+type test = {
+  name: string;
+};
 
 function App() {
+  const [data, setData] = useState<test | null>(null);
+
+  useEffect(() => {
+    setData({ name: "data" });
+  }, []);
+
+  console.log("data", data);
+
   return (
     <div className="App">
       <header className="App-header">
