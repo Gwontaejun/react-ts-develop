@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useEffect, useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-type test = {
+type Test = {
   name: string;
 };
 
 function App() {
-  const [data, setData] = useState<test | null>(null);
+  const [data, setData] = useState<Test | null>(null);
 
   useEffect(() => {
-    setData({ name: "data" });
+    setData({ name: 'data' });
   }, []);
 
-  console.log("data", data);
+  console.log('data', data);
 
   return (
     <div className="App">
@@ -22,12 +22,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
       </header>
